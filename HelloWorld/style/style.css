@@ -1,0 +1,62 @@
+
+/* los comentarios en css se escriben diferente a html y a javascript */
+/* para comentar un codigo  en 
+VS ir a Edicion Toggle Line comment para una linea y toggle block para bloques de texto 
+y para ver las teclas de atajo*/ 
+
+
+body{
+
+    color: rgba(29, 54, 167, 0.932); 
+    /* text-align: center; */
+    font-family: 'Times New Roman', Times, serif;
+
+    background-color: rgb(11, 65, 11);
+
+
+
+}
+
+
+
+div{
+
+margin-top: 10%;
+margin-left: 40%;
+/* le deje unos margenes de espacio un 10% y un 40% de izquierda con respecto a la pantalla  */
+
+
+
+
+}
+
+p{
+
+font-size: 20px;
+
+
+    
+}
+
+h5{
+
+/* a este le voy a poner un color diferente y le voy a cambiar el tamaño en pixels para que se vea mas grande*/
+
+
+color: white;
+font-size: 20px; 
+
+
+
+}
+
+/* a este le voy a cambiar el tipo de fuente  y lo voy a poner en negritas le subo el tamaño*/
+h4{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bold;
+font-size: 150% 
+/* de su tamaño original va a verse al 150 % */
+}
+
+
+
