@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prueba de javascripts</title>
+</head>
+
+<body>
+
+    <center>
+
+        <form action="">
+
+            <!-- armo un formulario desde html con dos inpus, dos label y dos botones, uno de suma y otro de resta -->
+            <div>
+                    <label for="">Ingrese dos números</label>
+            </div>
+            <div>
+                <input id='inputN1'>
+                <input id='inputN2'>
+            </div>
+
+            <div>
+                <button id="botonSumar">Sumar</button>
+                <button id='botonRestar'>Restar</button>
+                <button id='botonLimpiar'>Limpiar</button>
+
+            </div>
+        </form>
+    </center>
+
+    <style>
+        body {
+            background-image: url(".\\img\\calculator.jpg");
+            background-size: 110%
+        }
+
+        form {
+            width: 30%;
+            height: 20%;
+            position: fixed;
+            top: 30%;
+            left: 30%;
+            background-color: black;
+            padding: 2%;
+            color: white;
+            opacity: 0.8;
+            padding-bottom: 5%;
+            font-size: 150%;
+        }
+
+        button{
+            margin-top: 10%;
+            margin-right: 3%;
+            margin-left: 3%;
+            height: 30px;
+            width: 25%;
+            color: white;
+            background-color: black;
+
+        }
+
+        input{
+            margin-top: 5%;
+            margin-left: 5%;
+            text-align: inherit;
+            width: 100px;
+            height: 30px;
+
+        }
+        label{
+            margin-left: 5%;
+
+        }
+    </style>
+
+</body>
+<script src="./scripts/index.js"></script>
+
+</html>
