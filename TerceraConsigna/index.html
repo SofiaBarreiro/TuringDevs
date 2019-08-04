@@ -32,8 +32,11 @@
         </table>
 
     </div>
-    <a href='https://www.github.com/sofiabarreiro'> <button class='hide' id='button'>GitHub</button></a>
-    <!-- //boton a link externo -->
+    <a class='hide' id='button' href='https://www.github.com/sofiabarreiro'><button>GitHub</button></a><!-- //boton a link externo -->
+    <!-- 
+        [Fijate que si le dejás el .hide al <button> en el DOM vas a seguir teniendo un <a> vacío. Visualmente va a ser lo mismo, pero estructuralmente no.] 
+        [Y por otro lado, tener un <button> adentro de un <a> es raro. Por lo general elegís uno u otro, según lo que necesites. Podés darle estilos al <a> para que se vea como un botón.]
+    -->
 
     <script>
 
@@ -42,8 +45,10 @@
         li1.addEventListener('click', function () {
             //obtengo el elemento de la lista y le agrego un evento que muestre la tabla
             var tabla = document.getElementById('table');
-            tabla.setAttribute('class', 'show');
+            /* tabla.setAttribute('class', 'show'); */
             // cambiandole el tipo de clase logro que display pase a show
+            tabla.classList.toggle('show');
+            // [con .toggle podés mostrar y ocultar el elemento todas las veces que quieras.]
         });
         var li2 = document.getElementById('linkBoton');
         //obtengo el elemento de la lista y le agrego un evento que muestre el boton
@@ -51,7 +56,7 @@
         li2.addEventListener('click', function () {
 
             var button = document.getElementById('button');
-            button.setAttribute('class', 'show');
+            button.classList.toggle('show');
 
         });
 

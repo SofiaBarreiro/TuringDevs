@@ -6,16 +6,19 @@ font-size: 20px;
 color: #8a2387;
 }
 
-.show{
-    /* muestra el elemento */
-    display: show; 
+ 
+.hide{
+  /* oculta el elemento */
+    display: none;
 
 }
 
-.hide{
-    /* oculta el elemento */
-    display: none;
-
+.show{
+    /* muestra el elemento */
+    display:revert;
+    /*  Ojo que acá tenías declarado un valor para display que no existe ('show'). Te funcionaba igual porque el navegador al no reconocer ese valor, volvía al default del user agent stylesheet.
+        Lo normal es pasar de un display:none; a un display:block|inline-block|flex|inline; pero justo en este caso estás trabajando con tablas, que tienen su display especial. Así que te lo cambié por la propiedad 'revert' que básicamente vuelve al display original del elemento en cuestión.
+     */
 }
 
 body{ 
@@ -32,6 +35,7 @@ li{
     /* le saca los puntos */
     list-style-type: none; 
     text-decoration-line: underline;
+    cursor:pointer;
 }
 button{
     font-size: 15px;
