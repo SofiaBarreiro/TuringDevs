@@ -19,7 +19,9 @@
     <div id='tabla'>
 
 
-        <table id='table' class="hide">
+    <table id='table' class="hide"> 
+            <!-- hay dos clases diferentes una que muestra el elemento y otro qye lo oculta -->
+            <!-- los elementos se inician ocultos -->
             <tr>
                 <td>Elemento1</td>
                 <td>Elemento2</td>
@@ -32,19 +34,20 @@
 
     </div>
     <a href='https://www.github.com/sofiabarreiro'> <button class='hide' id='button'>GitHub</button></a>
-
+    <!-- //boton a link externo -->
 
     <script>
 
         var li1 = document.getElementById('linkTabla');
 
         li1.addEventListener('click', function () {
-
+            //obtengo el elemento de la lista y le agrego un evento que muestre la tabla
             var tabla = document.getElementById('table');
             tabla.setAttribute('class', 'show');
-
+            // cambiandole el tipo de clase logro que display pase a show
         });
         var li2 = document.getElementById('linkBoton');
+        //obtengo el elemento de la lista y le agrego un evento que muestre el boton
 
         li2.addEventListener('click', function () {
 
@@ -52,9 +55,6 @@
             button.setAttribute('class', 'show');
 
         });
-
-
-
 
     </script>
 
