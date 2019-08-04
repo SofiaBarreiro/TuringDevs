@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./scripts/index.js"></script>
+    <title>Tercera consigna</title>
+</head>
+
+<body>
+
+    <ul>
+        <li id="linkTabla">Haz Click para mostrar la tabla</li>
+        <li id="linkBoton">Haz Click para mostrar el botón</li>
+    </ul>
+    <div id='tabla'>
+
+
+        <table id='table' class="hide">
+            <tr>
+                <td>Elemento1</td>
+                <td>Elemento2</td>
+            </tr>
+            <tr>
+                <td>Elemento3</td>
+                <td>Elemento4</td>
+            </tr>
+        </table>
+
+    </div>
+    <a href='https://www.github.com/sofiabarreiro'> <button class='hide' id='button'>GitHub</button></a>
+
+
+    <script>
+
+        var li1 = document.getElementById('linkTabla');
+
+        li1.addEventListener('click', function () {
+
+            var tabla = document.getElementById('table');
+            tabla.setAttribute('class', 'show');
+
+        });
+        var li2 = document.getElementById('linkBoton');
+
+        li2.addEventListener('click', function () {
+
+            var button = document.getElementById('button');
+            button.setAttribute('class', 'show');
+
+        });
+
+
+
+
+    </script>
+
+</body>
+
+
+
+
+</html>

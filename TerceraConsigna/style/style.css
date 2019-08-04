@@ -1,0 +1,50 @@
+*{
+
+padding: 0%;
+margin: 0%;
+font-size: 20px;
+color: #8a2387;
+}
+
+body{ 
+     /* el fondo lo descargue de https://uigradients.com/ */ 
+background: linear-gradient(to right, #8a2387, #e94057, #f27121); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin-left: 30%;
+margin-top: 5%;
+}
+ul{
+    margin-bottom: 5%;
+}
+li{
+
+    /* le saca los puntos */
+list-style-type: none; 
+text-decoration-line: underline;
+}
+button{
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    margin-top: 5%;
+    margin-left: 10%;
+    background-color: #f27121;
+}
+
+table, tr, td{
+    border-collapse: collapse;
+    border: solid 5px black;
+    width: 300px;
+    height: 70%;
+    text-align: center;
+}
+.show{
+
+    display: show;
+
+}
+
+.hide{
+
+    display: none;
+
+}
